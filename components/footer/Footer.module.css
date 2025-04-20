@@ -1,0 +1,158 @@
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 60px 0 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.footerContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.footerCol h3 {
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.footerCol h3::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: #ff6b6b;
+}
+
+.footerCol p {
+  color: #bbb;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 15px;
+}
+
+.socialLink {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.socialLink:hover {
+  background-color: #ff6b6b;
+  transform: translateY(-3px);
+}
+
+.footerLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footerLink {
+  list-style-type: none;
+}
+
+.footerLink a {
+  color: #bbb;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.footerLink a:hover {
+  color: #ff6b6b;
+  padding-left: 5px;
+}
+
+.footer ul,
+.footer ol {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footerBottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #444;
+  color: #888;
+  font-size: 0.9rem;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.mapContainer {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.mapContainer:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.mapContainer iframe {
+  display: block;
+  transition: height 0.3s ease;
+  height: 180px;
+}
+
+.mapContainer:hover iframe {
+  height: 240px;
+}
+
+.footerCol {
+  position: relative;
+  overflow: visible;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .mapContainer iframe {
+    height: 150px;
+  }
+  
+  .mapContainer:hover iframe {
+    height: 200px;
+  }
+  
+  .mapContainer:hover {
+    transform: scale(1.05);
+  }
+  
+  .footerContainer {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
