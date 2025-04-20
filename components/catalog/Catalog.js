@@ -100,7 +100,7 @@ const { products: apiProducts, loading, error } = useProducts();
     };
 
     return (
-        <section cla    ssName={styles.catalog}>
+        <section className={styles.catalog}>
              {loading ? (
             <div>Loading products...</div>
         ) : error ? (
