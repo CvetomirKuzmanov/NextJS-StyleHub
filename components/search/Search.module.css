@@ -1,0 +1,139 @@
+/* Search Component Styles */
+.catalogSidebar {
+    flex: 0 0 280px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 75px 0 0 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 20px;
+    height: fit-content;
+  }
+  
+  /* Search Box Styles */
+  .searchBox {
+    margin-bottom: 25px;
+  }
+  
+  .searchBox h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  
+  .searchInputContainer {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .searchInput {
+    flex: 1;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+  }
+  
+  .searchBtn {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .searchBtn:hover {
+    background-color: #555;
+  }
+  
+  /* Filter Section Styles */
+  .filterSection {
+    margin-bottom: 25px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+  }
+  
+  .filterSection h3 {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  
+  /* Price Range Styles */
+  .priceRange {
+    padding: 10px 0;
+  }
+  
+  .priceSlider {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .priceInputs {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .priceInput {
+    width: 70px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  /* Filter Buttons */
+  .applyFilterBtn,
+  .clearFilterBtn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s;
+  }
+  
+  .applyFilterBtn {
+    background-color: #333;
+    color: white;
+  }
+  
+  .applyFilterBtn:hover {
+    background-color: #555;
+  }
+  
+  .clearFilterBtn {
+    background-color: transparent;
+    border: 1px solid #ddd;
+  }
+  
+  .clearFilterBtn:hover {
+    background-color: #f5f5f5;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 992px) {
+    .catalogSidebar {
+      margin-top: 0;
+      position: static;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .catalogSidebar {
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .priceInputs {
+      flex-wrap: wrap;
+    }
+    
+    .priceInput {
+      width: calc(50% - 15px);
+    }
+  }

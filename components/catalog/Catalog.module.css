@@ -1,0 +1,319 @@
+/* Layout Styles */
+.catalog {
+    width: 100%;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .catalogContainer {
+    display: flex;
+    gap: 30px;
+    margin: 40px 0;
+  }
+  
+  .catalogSidebar {
+    flex: 0 0 280px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 75px 0 0 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 20px;
+    height: fit-content;
+  }
+  
+  .catalogContent {
+    flex: 1;
+  }
+  
+  /* Filter Section Styles */
+  .filterSection {
+    margin-bottom: 25px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+  }
+  
+  .filterSection h3 {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  
+  .filterList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .filterList li {
+    margin-bottom: 8px;
+  }
+  
+  .filterCheckbox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .filterCheckbox input {
+    margin-right: 8px;
+  }
+  
+  /* Price Range Styles */
+  .priceRange {
+    padding: 10px 0;
+  }
+  
+  .priceSlider {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .priceInputs {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .priceInput {
+    width: 70px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  /* Color Options Styles */
+  .colorOptions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .colorOption {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .colorOption:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Size Options Styles */
+  .sizeOptions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .sizeOption {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .sizeOption:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .sizeOption.active {
+    background-color: #333;
+    color: white;
+    border-color: #333;
+  }
+  
+  /* Filter Buttons */
+  .applyFilterBtn,
+  .clearFilterBtn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s;
+  }
+  
+  .applyFilterBtn {
+    background-color: #333;
+    color: white;
+  }
+  
+  .applyFilterBtn:hover {
+    background-color: #555;
+  }
+  
+  .clearFilterBtn {
+    background-color: transparent;
+    border: 1px solid #ddd;
+  }
+  
+  .clearFilterBtn:hover {
+    background-color: #f5f5f5;
+  }
+  
+  /* Catalog Header Styles */
+  .catalogHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .catalogHeader h1 {
+    font-size: 28px;
+    font-weight: 600;
+  }
+  
+  .catalogTools {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .catalogSort {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .sortSelect {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: white;
+  }
+  
+  .catalogView {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .viewBtn {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  .viewBtn.active {
+    background-color: #333;
+    color: white;
+    border-color: #333;
+  }
+  
+  /* Product Grid */
+  .productGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+  }
+  
+  .catalogGrid {
+    margin-bottom: 40px;
+  }
+  
+  /* No Products Message */
+  .noProductsMessage {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 40px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+  }
+  
+  .noProductsMessage p {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  /* Pagination Styles */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 5px;
+  }
+  
+  .paginationNumber,
+  .paginationArrow,
+  .paginationDots {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+  
+  .paginationNumber:hover,
+  .paginationArrow:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .paginationNumber.active {
+    background-color: #333;
+    color: white;
+    border-color: #333;
+  }
+  
+  .paginationDots {
+    border: none;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 992px) {
+    .catalogContainer {
+      flex-direction: column;
+    }
+    
+    .catalogSidebar {
+      flex: 0 0 100%;
+      margin-top: 0;
+      position: static;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .catalogHeader {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
+    }
+    
+    .productGrid {
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .catalogTools {
+      width: 100%;
+      justify-content: space-between;
+    }
+    
+    .productGrid {
+      grid-template-columns: 1fr;
+    }
+  }
